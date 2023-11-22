@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="web-developer"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-29 10:07:52 "/>
+        <attribute name="created" value="d2ViLWRldmVsb3BlcjtVRVBULUVOUy03NzQ1OzIwMjMtMDgtMjk7IjA5OjAwOjA3ICI7MzM3OQ=="/>
+        <attribute name="edited" value="d2ViLWRldmVsb3BlcjtVRVBULUVOUy03NzQ1OzIwMjMtMDgtMjk7IjEwOjA3OjUyICI7MTszNDg2"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Idade, AnoNascimento, AnoAtual, MesNascimento, MesAtual" type="Integer" array="False" size=""/>
+            <output expression="&quot;Qual sua idade? &quot;" newline="True"/>
+            <input variable="Idade"/>
+            <output expression="&quot;Em que ano estamos? &quot;" newline="True"/>
+            <input variable="AnoAtual"/>
+            <output expression="&quot;Em qual m&#234;s voc&#234; nasceu? &quot;" newline="True"/>
+            <input variable="MesNascimento"/>
+            <output expression="&quot;Em qual m&#234;s estamos? &quot;" newline="True"/>
+            <input variable="MesAtual"/>
+            <if expression="MesNascimento&gt;MesAtual">
+                <then>
+                    <assign variable="" expression=""/>
+                </then>
+                <else>
+                    <assign variable="AnoNascimento" expression="AnoAtual-Idade"/>
+                </else>
+            </if>
+            <assign variable="MesAtual" expression=""/>
+        </body>
+    </function>
+</flowgorithm>

@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="web-developer"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-29 11:39:35 "/>
+        <attribute name="created" value="d2ViLWRldmVsb3BlcjtVRVBULUVOUy03NzQ1OzIwMjMtMDgtMjk7IjExOjA3OjQzICI7MzM3OQ=="/>
+        <attribute name="edited" value="d2ViLWRldmVsb3BlcjtVRVBULUVOUy03NzQ1OzIwMjMtMDgtMjk7IjExOjM5OjM1ICI7MTszNDkz"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x, i, resultado" type="Integer" array="False" size=""/>
+            <output expression="&quot;Qual tabuada voc&#234; quer resolver? &quot;" newline="True"/>
+            <input variable="x"/>
+            <for variable="i" start="1" end="10" direction="inc" step="1">
+                <assign variable="resultado" expression="x* i"/>
+                <output expression="x &amp; &quot; x &quot;&amp; i &amp; &quot; = &quot;  &amp; resultado" newline="True"/>
+            </for>
+        </body>
+    </function>
+</flowgorithm>

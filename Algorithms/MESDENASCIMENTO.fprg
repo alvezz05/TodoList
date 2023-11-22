@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="3.0">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="web-developer"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2023-08-29 10:26:05 "/>
+        <attribute name="created" value="d2ViLWRldmVsb3BlcjtVRVBULUVOUy03NzQ1OzIwMjMtMDgtMjk7IjEwOjA3OjU2ICI7MzM4Mg=="/>
+        <attribute name="edited" value="d2ViLWRldmVsb3BlcjtVRVBULUVOUy03NzQ1OzIwMjMtMDgtMjk7IjEwOjI2OjA1ICI7MTszNDg1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Idade, AnoAtual, AnoNascimento, MesAtual, MesNascimento" type="Integer" array="False" size=""/>
+            <assign variable="AnoAtual" expression="2023"/>
+            <assign variable="MesAtual" expression="8"/>
+            <output expression="&quot;Qual sua Idade? &quot;" newline="True"/>
+            <input variable="Idade"/>
+            <output expression="&quot;Digite o n&#250;mero do m&#234;s do seu nascimento: &quot;" newline="True"/>
+            <input variable="MesNascimento"/>
+            <if expression="MesNascimento &gt; MesAtual">
+                <then>
+                    <assign variable="AnoNascimento" expression="(AnoAtual-1) - idade"/>
+                </then>
+                <else>
+                    <assign variable="AnoNascimento" expression="AnoAtual-Idade"/>
+                </else>
+            </if>
+            <output expression="&quot;Voc&#234; nasceu em: &quot; &amp;AnoNascimento" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
